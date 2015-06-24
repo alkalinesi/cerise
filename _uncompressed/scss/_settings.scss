@@ -1,0 +1,128 @@
+$fontPath: 'https://virginhotels.com/assets/themes/virginhotels/fonts/';
+$cdn_url: '';
+$image_url : '../images/';
+	
+/* Fonts
+   ========================================================================== */
+
+$proxima: "proxima-nova", sans-serif;
+
+@font-face {
+    font-family: 'Veon100Watt-Bold';
+    src: url('#{$fontPath}eon100watt-webfont.eot');
+    src: url('#{$fontPath}veon100watt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$fontPath}veon100watt-webfont.woff') format('woff'),
+         url('#{$fontPath}veon100watt-webfont.ttf') format('truetype'),
+         url('#{$fontPath}veon100watt-webfont.svg#veon100watt-bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}	
+
+@mixin veon() { 
+	font-family: 'Veon100Watt-Bold', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+	font-family: 'virginhotelsicon';
+	src:url('#{$fontPath}virginhotelsicon.eot?-ys1t5y');
+	src:url('#{$fontPath}virginhotelsicon.eot?#iefix-ys1t5y') format('embedded-opentype'),
+		url('#{$fontPath}virginhotelsicon.woff?-ys1t5y') format('woff'),
+		url('#{$fontPath}virginhotelsicon.ttf?-ys1t5y') format('truetype'),
+		url('#{$fontPath}virginhotelsicon.svg?-ys1t5y#virginhotelsicon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin font-normal() {
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@mixin font-italic() {
+	font-style: italic;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@mixin font-semibold() {
+	font-weight: 600;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@mixin font-bold() {
+	font-weight: 700;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Icons
+   ========================================================================== */
+
+.icon {
+	font-family: 'virginhotelsicon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-VH-facebook-01:before {
+	content: "\41";
+}
+.icon-VH-google-01:before {
+	content: "\45";
+}
+.icon-VH-instagram-01:before {
+	content: "\44";
+}
+.icon-VH-linkedin-01:before {
+	content: "\43";
+}
+.icon-VH-twitter2-01:before {
+	content: "\42";
+}
+
+	
+/* Colors
+   ========================================================================== */
+$white: #fff;
+$lightgray: #eee;
+$accentgray: #c8c9cb;
+$gray: #939598;
+$darkgray: #4d4d4f;	
+$black: #000000;
+
+$red: #cc1a00;
+$darkred: #330000;
+
+$purple: #691bbb;	
+
+/* Sizes
+   ========================================================================== */
+
+$column-gutter: rem-calc(8);	
+	
+$panel_height: rem-calc(280);	
+$panel_width: rem-calc(120);
+
+/* Form Helpers
+   ========================================================================== */
+
+@mixin placeholder {
+   	&.placholder {@content;}
+    &:-moz-placeholder {@content; /* Firefox 18- */}
+    &::-moz-placeholder {@content; /* Firefox 19+ */}
+    &:-ms-input-placeholder {@content;}    
+    &::-webkit-input-placeholder {@content;}
+}

@@ -1,0 +1,23 @@
+{
+  "name": "rsvp-virginhotels",
+  "version": "1.0.0",
+  "authors": [
+    "aj@1trickpony.com"
+  ],
+  "main": "../css/rsvp.virginhotels.css",
+  "license": "MIT",
+  "homepage": "http://virginhotels.com/rsvp",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~5.5.1",
+    "parsleyjs": "~2.0.7",
+    "placeholders": "~4.0.1"
+  }
+}
